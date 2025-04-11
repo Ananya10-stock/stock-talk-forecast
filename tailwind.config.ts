@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Financial theme colors
+				finance: {
+					primary: '#0A3161',        // Deep blue
+					secondary: '#1B5E20',      // Deep green
+					accent: '#FFD700',         // Gold
+					muted: '#F5F5F5',          // Light gray
+					background: '#FFFFFF',     // White 
+					card: '#F9FAFC',           // Off-white
+					positive: '#00C853',       // Green for positive values
+					negative: '#D32F2F',       // Red for negative values
+					chart: {
+						blue: '#1976D2',
+						green: '#388E3C',
+						red: '#D32F2F',
+						purple: '#7B1FA2',
+						orange: '#F57C00',
+						gray: '#616161'
+					}
 				}
 			},
 			borderRadius: {
@@ -84,11 +104,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-gentle': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-gentle': 'pulse-gentle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			}
 		}
 	},
